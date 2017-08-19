@@ -1,0 +1,32 @@
+.p-auth-signIn {
+  height: 100%;
+  overflow: hidden;
+}
+.w-auth-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+input {
+  width: 80%;
+  margin: 8px 16px;
+  padding: 5px;
+  border-bottom: 1px solid #ccc;
+  background: #fff;
+  font-size: 15px;
+}
+.w-auth-textfield-holder {
+  color: #ccc;
+  font-size: 15px;
+}
+.w-auth-btn {
+  width: 80%;
+  margin: 50px 16px;
+}
+button {
+  font-size: 14px;
+  border-radius: 4px;
+  color: #fff;
+  background-color: #00db8b;
+}

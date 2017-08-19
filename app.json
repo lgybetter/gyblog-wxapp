@@ -1,12 +1,44 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/edit/edit",
+    "pages/star/star",
+    "pages/person/person",
+    "pages/auth/signIn/signIn",
+    "pages/auth/signUp/signUp"
   ],
+  "tabBar": {
+    "position": "bottom",
+    "borderStyle": "white",
+    "backgroundColor": "white",
+    "selectedColor": "#00db8b",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "assets/icons/home_un.png",
+      "selectedIconPath": "assets/icons/home.png"
+    }, {
+      "pagePath": "pages/edit/edit",
+      "text": "发表",
+      "iconPath": "assets/icons/edit_un.png",
+      "selectedIconPath": "assets/icons/edit.png"
+    }, {
+      "pagePath": "pages/star/star",
+      "text": "收藏",
+      "iconPath": "assets/icons/star_un.png",
+      "selectedIconPath": "assets/icons/star.png"
+    }, {
+      "pagePath": "pages/person/person",
+      "text": "个人",
+      "iconPath": "assets/icons/person_un.png",
+      "selectedIconPath": "assets/icons/person.png"
+    }]
+  },
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle":"black",
+    "navigationBarBackgroundColor": "#fff"
   }
 }

@@ -1,0 +1,10 @@
+<view class="p-auth-signIn">
+  <view class="w-auth-form">
+    <image style="margin: 16px 0 32px 0; width: 100px; height: 100px; border-radius: 50%; background-color: #eeeeee;" mode="aspectFit" src="http://os32fgzvj.bkt.clouddn.com/012489fbdca023b5de1f5ddb41e15f61-head-picture.jpg"></image>
+    <input value="{{user.email}}" placeholder="请输入邮箱地址" placeholder-class="w-auth-textfield-holder" bindinput="handleInputEmail"/>
+    <input value="{{user.password}}" placeholder="请输入密码" placeholder-class="w-auth-textfield-holder" bindinput="handleInputPassword" password/>
+    <view class="w-auth-btn">
+      <button size="default" bindtap="signIn">登陆</button>
+    </view>
+  </view>
+</view>
