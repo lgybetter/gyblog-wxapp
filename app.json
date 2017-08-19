@@ -39,6 +39,7 @@
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle":"black",
-    "navigationBarBackgroundColor": "#fff"
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "GyBlog"
   }
 }

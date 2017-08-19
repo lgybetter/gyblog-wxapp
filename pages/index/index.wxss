@@ -1,3 +1,9 @@
+::-webkit-scrollbar{
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+
 .p-home {
   padding: 8px;
 }
