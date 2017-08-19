@@ -7,7 +7,11 @@ exports.getPosts = (params, success, error) => {
       'Content-Type': 'application/json',
       'Authorization': `Bearer ${wx.getStorageSync('token')}`
     },
-    success: success,
-    fail: error
+    success: res => {
+      success && success(res)
+    },
+    fail: err => {
+      error && error(err)
+    }
   })
 }

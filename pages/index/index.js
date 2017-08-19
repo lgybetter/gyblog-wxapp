@@ -3,6 +3,7 @@ const { getPosts } = require('../../apis/posts')
 const app = getApp()
 Page({
   data: {
+    heightStyle: '',
     userInfo: {},
     posts: {
       list: [],
@@ -10,9 +11,12 @@ Page({
     }
   },
   //事件处理函数
-  bindViewTap: function() {
+  bindViewTap () {
   },
-  onLoad: function (options) {
+  onLoad (options) {
+    this.setData({
+      heightStyle: `height: ${wx.getSystemInfoSync().windowHeight - 16}px;`
+    })
     //调用应用实例的方法获取全局数据
     app.getUserInfo(userInfo => {
       //更新数据

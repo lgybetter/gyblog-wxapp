@@ -1,5 +1,5 @@
 <!--index.wxml-->
-<view class="">
+<view class="p-home">
   <!--<view  bindtap="bindViewTap" class="userinfo">
     <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
     <text class="userinfo-nickname">{{userInfo.nickName}}</text>
@@ -7,9 +7,29 @@
   <view class="usermotto">
     <text class="user-motto">{{motto}}</text>
   </view>-->
-  <scroll-view scroll-y style="height: 100%;">
-    <view wx:for="{{posts.list}}" wx:for-index="index" wx:for-item="post" wx:key="index">
-      {{post.title}}
+  <scroll-view scroll-y style="{{heightStyle}}">
+    <view wx:for="{{posts.list}}" wx:for-index="index" wx:for-item="post" wx:key="index" class="w-post-container">
+      <view class="w-post-header">
+        <view class="w-post-user-msg">
+          <view class="w-post-user-icon"></view>
+          <text style="font-size: 15px;">RFon</text>
+        </view>
+        <view class="w-post-action-msg">
+          <view class="w-post-date">2017-08-20</view>
+          <view class="w-post-action-btn"></view>
+          <view class="w-post-action-btn"></view>
+        </view>
+      </view>
+      <view class="w-post-section">
+        <view class="w-post-detail">
+          <text class="w-post-title">{{post.title}}</text>
+          <view class="w-line-mark"></view>
+          <text class="w-post-subTitle">{{post.subTitle}}</text>
+        </view>
+        <view class="w-post-image">
+          <image style="width: 100%; height: 100%;" mode="scaleToFill" src="{{post.icon}}"></image>
+        </view>
+      </view>
     </view>
   </scroll-view>
 </view>

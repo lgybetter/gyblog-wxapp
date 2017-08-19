@@ -1,21 +1,104 @@
-/**index.wxss**/
-.userinfo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.p-home {
+  padding: 8px;
 }
 
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
+.w-post-container {
+  height: 164px;
+  margin: 8px;
+  padding: 0 8px;
+  border-radius: 5px;
+  background-color: #f7f7f9;
+}
+
+.w-post-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 35px;
+}
+
+.w-post-user-msg {
+  display: flex;
+  align-items: center;
+  width: auto;
+}
+
+.w-post-user-icon {
+  margin-right: 8px;
+  height: 25px;
+  width: 25px;
+  background: #00db8b;
   border-radius: 50%;
 }
 
-.userinfo-nickname {
-  color: #aaa;
+.w-post-action-msg {
+  display: flex;
 }
 
-.usermotto {
-  margin-top: 200px;
+.w-post-date {
+  height: 20px;
+  padding: 0 8px;
+  border-radius: 8px;
+  font-size: 12px;
+  line-height: 24px;
+  color: #acacac;
+  background: #e9e9e9;
+}
+
+.w-post-action-btn {
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  margin-left: 8px;
+  background: #00db8b;
+}
+
+.w-post-section {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 5px;
+  height: 120px;
+  overflow: hidden;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(204, 204, 204, 0.6);
+}
+
+.w-post-detail {
+  flex: 1;
+  box-sizing: border-box;
+  height: 100%;
+  padding: 16px;
+}
+
+.w-post-title {
+  font-size: 14px;
+  overflow : hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.w-line-mark {
+  margin: 5px 0;
+  height: 2px;
+  width: 20px;
+  background-color: #00db8b;
+}
+
+.w-post-subTitle {
+  font-size: 12px;
+  color: #acacac;
+  overflow : hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.w-post-image {
+  width: 120px;
+  height: 100%;
+  overflow: hidden;
+  background-color: #00db8b;
 }
