@@ -1,16 +1,16 @@
 //app.js
 App({
   onLaunch (options) {
-    // try {
-    //   let user = wx.getStorageSync('user')
-    //   if(!user) {
-    //     wx.redirectTo({
-    //       url: 'pages/auth/signIn/signIn'
-    //     })
-    //   }
-    // } catch (err) {
-    //   console.log(err)      
-    // }
+    try {
+      let user = wx.getStorageSync('token')
+      if(!user) {
+        wx.redirectTo({
+          url: 'pages/auth/signIn/signIn'
+        })
+      }
+    } catch (err) {
+      console.log(err)      
+    }
   },
   onShow (options) {
   },

@@ -1,4 +1,4 @@
-const { commonUrl } = require('../../../config.dev')
+const { signIn } = require('../../../apis/auth')
 
 Page({
   data: {
@@ -16,21 +16,21 @@ Page({
       console.log('请输入密码')
       return
     }
-    wx.request({
-      url: `${commonUrl}/user/?email=${this.data.user.email}&password=${this.data.user.password}`,
-      success: function (res) {
-        if(res.data.code === 200) {
-          wx.setStorageSync('user', res.data.data)
-          wx.redirectTo({
-            url: '/pages/index/index'
-          })
-        } else {
-          console.log(res.data.msg)
-        }
-      },
-      fail: function (err) {
-        console.log(err)
+    signIn({
+      email: this.data.user.email,
+      password: this.data.user.password
+    }, res => {
+      if(res.data.code === 200) {
+        wx.setStorageSync('token', res.data.token)
+        wx.setStorageSync('user', res.data.data)
+        wx.redirectTo({
+          url: '/pages/index/index'
+        })
+      } else {
+        console.log(res.data.msg)
       }
+    }, err => {
+      console.log(err)
     })
   },
   handleInputEmail (event) {

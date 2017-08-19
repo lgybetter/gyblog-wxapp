@@ -1,22 +1,33 @@
-//index.js
+const { getPosts } = require('../../apis/posts')
 //获取应用实例
-var app = getApp()
+const app = getApp()
 Page({
   data: {
-    motto: 'Hello World',
-    userInfo: {}
+    userInfo: {},
+    posts: {
+      list: [],
+      count: 0
+    }
   },
   //事件处理函数
   bindViewTap: function() {
   },
   onLoad: function (options) {
-    var that = this
     //调用应用实例的方法获取全局数据
-    app.getUserInfo(function(userInfo){
+    app.getUserInfo(userInfo => {
       //更新数据
-      that.setData({
+      this.setData({
         userInfo:userInfo
       })
+    })
+    getPosts({}, res => {
+      this.setData({
+        posts: {
+          list: res.data.objects,
+          count: res.data.count
+        }
+      })
+      console.log(this.data.posts)
     })
   }
 })
