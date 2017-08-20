@@ -15,3 +15,19 @@ exports.getPosts = (params, success, error) => {
     }
   })
 }
+
+exports.getPost = (params, success, error) => {
+  wx.request({
+    url: `${authUrl}/post/${params.id}`,
+    header: {
+      'Content-Type': 'application/json',
+      'Authorization': `Bearer ${wx.getStorageSync('token')}`
+    },
+    success: res => {
+      success && success(res)
+    },
+    fail: err => {
+      error && error(err)
+    }
+  })
+}

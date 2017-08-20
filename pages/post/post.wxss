@@ -1,0 +1,6 @@
+@import '../../plugins/wemark/wemark.wxss'
+@import '../../assets/style/normal.wxss'
+
+.p-post {
+  padding: 0 16px;
+}

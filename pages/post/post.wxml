@@ -1,0 +1,6 @@
+<import src="../../plugins/wemark/wemark.wxml"/>
+<view class="p-post">
+  <scroll-view scroll-y style="{{heightStyle}}" scroll-with-animation>
+    <template is="wemark" data="{{...wemark}}"></template>
+  </scroll-view>
+</view>

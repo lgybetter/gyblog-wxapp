@@ -1,4 +1,4 @@
 module.exports = {
-  commonUrl: 'http://localhost:3001/api',
-  authUrl: 'http://localhost:3001/api/auth'
+  commonUrl: 'http://192.168.1.17:3001/api',
+  authUrl: 'http://192.168.1.17:3001/api/auth'
 }

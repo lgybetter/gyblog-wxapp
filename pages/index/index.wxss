@@ -1,9 +1,4 @@
-::-webkit-scrollbar{
-  width: 0;
-  height: 0;
-  color: transparent;
-}
-
+@import '../../assets/style/normal.wxss'
 .p-home {
   padding: 8px;
 }
@@ -86,7 +81,7 @@
 }
 
 .w-line-mark {
-  margin: 5px 0;
+  margin: 10px 0;
   height: 2px;
   width: 20px;
   background-color: #00db8b;

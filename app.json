@@ -4,6 +4,7 @@
     "pages/edit/edit",
     "pages/star/star",
     "pages/person/person",
+    "pages/post/post",
     "pages/auth/signIn/signIn",
     "pages/auth/signUp/signUp"
   ],

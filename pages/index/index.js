@@ -1,4 +1,4 @@
-const { getPosts } = require('../../apis/posts')
+const { getPosts } = require('../../apis/post')
 //获取应用实例
 const app = getApp()
 Page({
@@ -11,7 +11,10 @@ Page({
     }
   },
   //事件处理函数
-  bindViewTap () {
+  toPostPage (event) {
+    wx.navigateTo({
+      url: `/pages/post/post?id=${event.currentTarget.dataset.id}`
+    })
   },
   onLoad (options) {
     this.setData({
