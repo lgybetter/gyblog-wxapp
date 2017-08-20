@@ -11,11 +11,13 @@
     <view wx:for="{{posts.list}}" wx:for-index="index" wx:for-item="post" wx:key="index" class="w-post-container" data-id="{{post.id}}" bindtap="toPostPage">
       <view class="w-post-header">
         <view class="w-post-user-msg">
-          <view class="w-post-user-icon"></view>
-          <text style="font-size: 15px;">RFon</text>
+          <view class="w-post-user-icon">
+            <image style="width: 100%; height: 100%;" mode="scaleToFill" src="{{post.createBy.icon}}"></image>
+          </view>
+          <text style="font-size: 15px;">{{post.createBy.name}}</text>
         </view>
         <view class="w-post-action-msg">
-          <view class="w-post-date">2017-08-20</view>
+          <view class="w-post-date">{{post.date}}</view>
           <view class="w-post-action-btn"></view>
           <view class="w-post-action-btn"></view>
         </view>

@@ -1,6 +1,18 @@
 <import src="../../plugins/wemark/wemark.wxml"/>
 <view class="p-post">
   <scroll-view scroll-y style="{{heightStyle}}" scroll-with-animation>
+    <view class="w-post-header">
+      <text>2017/08/20/by RFon</text>
+      <view>
+        <text class="w-post-action-msg w-post-action-thumb">234点赞</text>
+        <text class="w-post-action-msg">88收藏</text>
+      </view>
+    </view>
+    <view class="w-line-mark"></view>
     <template is="wemark" data="{{...wemark}}"></template>
   </scroll-view>
+  <view class="w-post-action-bar">
+    <button class="w-post-action-btn w-post-action-btn--left">点赞</button>
+    <button class="w-post-action-btn">收藏</button>
+  </view>
 </view>

@@ -7,7 +7,7 @@ Page({
   },
   onLoad(options) {
     this.setData({
-      heightStyle: `height: ${wx.getSystemInfoSync().windowHeight - 16}px;`
+      heightStyle: `height: ${wx.getSystemInfoSync().windowHeight - 60}px;`
     })
     getPost({
       id: options.id,
