@@ -2,7 +2,7 @@
 <view class="p-post">
   <scroll-view scroll-y style="{{heightStyle}}" scroll-with-animation>
     <view class="w-post-header">
-      <text>2017/08/20/by RFon</text>
+      <text>2017/08/20/by GY</text>
       <view>
         <text class="w-post-action-msg w-post-action-thumb">234点赞</text>
         <text class="w-post-action-msg">88收藏</text>
